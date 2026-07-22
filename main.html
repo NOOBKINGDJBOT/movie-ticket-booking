@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Ticket Booking</title>
+
+<style>
+body{
+    background-color:#0d1b2a;
+    background-image:url("ex9.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+h1,h2{
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    background-color:rgba(255,255,255,0.1);
+}
+
+th,td{
+    border:2px solid white;
+    padding:10px;
+    text-align:center;
+}
+
+form{
+    text-align:center;
+}
+
+input,select{
+    padding:8px;
+    margin:8px;
+}
+
+button{
+    padding:10px 20px;
+    background-color:crimson;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background-color:darkred;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>AV Show</h1>
+
+<header>
+    <div class="container">
+        <h2>Movie Ticket Booking</h2>
+    </div>
+</header>
+
+<table border="3">
+<tr>
+    <th><img src="4.jpg" width="255px"></th>
+    <th><img src="3.webp" width="255px"></th>
+    <th><img src="2.avif" width="255px"></th>
+</tr>
+</table>
+
+<table border="3">
+<tr>
+    <th><img src="1.jpg" width="255px"></th>
+    <th><img src="5.jpg" width="255px"></th>
+</tr>
+</table>
+
+<br>
+
+<form>
+
+<h2>Name</h2>
+<label>Name</label><br>
+<input type="text" placeholder="Enter your name" required>
+
+<h2>Movies</h2>
+<label>Movies</label><br>
+<select required>
+    <option>Avengers</option>
+    <option>Spider-Man</option>
+    <option>Avatar</option>
+    <option>Jurassic World</option>
+</select>
+
+<h2>Date</h2>
+<label>Date</label><br>
+<input type="date" required>
+
+<h2>Select Time</h2>
+<label>Select Time</label><br>
+<select required>
+    <option>10:00 AM</option>
+    <option>1:00 PM</option>
+    <option>4:00 PM</option>
+    <option>7:00 PM</option>
+</select>
+
+<h2>Number of Tickets</h2>
+<label>Number of Tickets</label><br>
+<input type="number" min="1" max="10" required>
+
+<h2>Seat</h2>
+
+<input type="radio" name="seat"> First Row
+<input type="radio" name="seat"> Middle Row
+<input type="radio" name="seat"> Last Row
+
+<br><br>
+
+<button type="submit">Book Ticket</button>
+
+</form>
+
+<br>
+
+<table border="1" cellpadding="8">
+
+<tr>
+    <th>TICKET ID</th>
+    <th>MOVIE NAME</th>
+    <th>DATE</th>
+    <th>TIMING</th>
+    <th>PRICE</th>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>MASTER</td>
+    <td>01/01/26</td>
+    <td>10:00 AM</td>
+    <td>₹200</td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>LEO</td>
+    <td>02/01/26</td>
+    <td>10:00 AM</td>
+    <td>₹200</td>
+</tr>
+
+<tr>
+    <td>3</td>
+    <td>BEAST</td>
+    <td>03/01/26</td>
+    <td>10:00 AM</td>
+    <td>₹200</td>
+</tr>
+
+<tr>
+    <td>4</td>
+    <td>GOAT</td>
+    <td>04/01/26</td>
+    <td>10:00 AM</td>
+    <td>₹200</td>
+</tr>
+
+</table>
+
+</body>
+</html>
